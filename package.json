@@ -1,0 +1,13 @@
+﻿{
+  "name": "hemsidaonline-app",
+  "version": "0.0.0",
+  "description": "Simple App for HemsidaOnline",
+  "main": "app.js",
+  "repository": "",
+  "author": "Gabriel Lantz <lantz.gabriel@gmail.com>",
+  "dependencies": {
+    "async": "~0.2.8",
+    "express": "~3.2.4",
+    "socket.io": "~0.9.14"
+  }
+}

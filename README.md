@@ -1,4 +1,6 @@
-hemsidaonlineapp
+Simple HemsidaOnline App
 ================
 
-Simple App for HemsidaOnline
+##Install
+
+1. Go to directory and run npn install in terminal

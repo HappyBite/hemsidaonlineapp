@@ -2,10 +2,9 @@
 // http://rapiddg.com/blog/calling-rest-api-nodejs-script
 
 var querystring = require('querystring');
-//var https = require('https');
 var http = require('http');
-
 var host = 'api.hemsidaonline.se';
+var port = '555';
 
 function performRequest(endpoint, method, data, success) {
 	var dataString = JSON.stringify(data);
@@ -22,6 +21,7 @@ function performRequest(endpoint, method, data, success) {
 	}
 	var options = {
 		host: host,
+		port: port,
 		path: endpoint,
 		method: method,
 		headers: headers
@@ -47,19 +47,7 @@ function performRequest(endpoint, method, data, success) {
 	req.end();
 }
 
-function login() {
-	performRequest('/api/session', 'POST', {
-		username: username,
-		password: password,
-		api_key_id: apiKey
-	}, function(data) {
-		sessionId = data.result.id;
-		console.log('Logged in:', sessionId);
-		//getCards();
-	});
-}
-
-functionget(endPoint) {
+function get(endPoint) {
 	performRequest(endPoint, 'GET', {
 
 }, function(data) {
@@ -67,5 +55,5 @@ functionget(endPoint) {
 });
 }
 
-get('/v1/sites/5');
-//get('/v1/sites/5/posts/store-product');
+get('/v1/sites/90');
+//get('/v1/sites/5/posts/store-product');
